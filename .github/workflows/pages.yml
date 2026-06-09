@@ -38,4 +38,6 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Show deployment URL
-        run: 'echo "GitHub Pages URL: ${{ steps.deployment.outputs.page_url }}"'
+        run: |
+          echo "GitHub Pages URL: ${{ steps.deployment.outputs.page_url }}"
+          echo "Fixed Pages URL: https://chengshan-glitch.github.io/vue-project/"
